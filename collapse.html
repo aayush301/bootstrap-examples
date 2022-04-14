@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <button data-toggle="collapse" data-target="#demo">Click</button>
+        <div id="demo">This is some text</div>
+        <div>This will not collapse</div>
+
+        <a href="#demo2" data-toggle="collapse">Click</a>
+        <div id="demo2">This is another text This is another text This is another text This is another text This is another text This is another text</div>
+        <div>This will remain like this</div>
+    
+        <a href="#demo3" data-toggle="collapse">Click</a>
+        <div id="demo3" class="collapse">hello world</div>
+        <div>This is at it is</div>
+
+        <a href="#demo4" data-toggle="collapse">Click</a>
+        <div id="demo4" class="collapse show">hello world!!</div>
+        <div>This is also at it is</div>
+
+
+        <h2>Accordion</h2>
+
+        <div id="accordion1">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#one1" class="card-link" data-toggle="collapse">click me</a>
+                </div>
+                <div id="one1" class="collapse" data-parent="#accordion1">
+                    <div class="card-body">
+                        this is some text
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a href="#two1" class="card-link" data-toggle="collapse">click me</a>
+                </div>
+                <div id="two1" class="collapse" data-parent="#accordion1">
+                    <div class="card-body">
+                        this is some another text
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a href="#three1" class="card-link" data-toggle="collapse">click me</a>
+                </div>
+                <div id="three1" class="collapse" data-parent="#accordion1">
+                    <div class="card-body">
+                        this is also some text
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br>
+
+        <div id="accordion2">
+            <div class="card">
+                <div class="card-header p-0">
+                    <a href="#one2" class="card-link p-3 btn-block" data-toggle="collapse">click me</a>
+                </div>
+                <div id="one2" class="collapse" data-parent="#accordion2">
+                    <div class="card-body">
+                        this is some text
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header p-0">
+                    <a href="#two2" class="card-link p-3 btn-block" data-toggle="collapse">click me</a>
+                </div>
+                <div id="two2" class="collapse" data-parent="#accordion2">
+                    <div class="card-body">
+                        this is some another text
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header p-0">
+                    <a href="#three2" class="card-link p-3 btn-block" data-toggle="collapse">click me</a>
+                </div>
+                <div id="three2" class="collapse" data-parent="#accordion2">
+                    <div class="card-body">
+                        this is also some text
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+          
+    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>

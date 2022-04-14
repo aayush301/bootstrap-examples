@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .carousel .carousel-item
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .carousel img
+        {
+            display: block;
+            object-fit: cover;
+            width:100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="carousel slide m-auto" style="width:80%;" id="id" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#id" data-slide-to="0" class="active"></li>
+                <li data-target="#id" data-slide-to="1"></li>
+                <li data-target="#id" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img.jakpost.net/c/2019/03/02/2019_03_02_66706_1551461528._large.jpg" alt="image 1">
+                    <div class="carousel-caption">
+                        <h3>Book</h3>
+                        <p>We should read book</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/447px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg" alt="image 2">
+                    <div class="carousel-caption">
+                        <h3>Imp</h3>
+                        <p>Books are important</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLNDhMFFH8PW9NWSC_KjqGvjprR70gF7K2uQ&usqp=CAU" alt="image 3">
+                    <div class="carousel-caption">
+                        <h3>Read</h3>
+                        <p>Read books</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#id" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#id" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <br><br>
+        <a href="#" data-toggle="tooltip" title="This is important data">Hover over me</a>
+        <a href="#" data-toggle="tooltip" data-placement="top" title="This is important data">Hover over me</a>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="This is important data">Hover over me</a>
+        <a href="#" data-toggle="tooltip" data-placement="left" title="This is important data">Hover over me</a>
+        <a href="#" data-toggle="tooltip" data-placement="right" title="This is important data">Hover over me</a>
+        <br>
+        <button class="btn btn-success" data-toggle="tooltip" title="Tooltip">Hover</button>
+        <br><br>
+
+        <a href="#" data-toggle="popover" title="popover header" data-content="Main content of popover">Click</a>
+        <a href="#" data-toggle="popover" title="popover header" data-content="Main content of popover" data-placement="top">click</a>
+        <a href="#" data-toggle="popover" title="popover header" data-content="Main content of popover" data-placement="bottom">click</a>
+        <a href="#" data-toggle="popover" title="header" data-content="left popover" data-placement="left">click</a>
+        <a href="#" data-toggle="popover" title="popover header" data-content="Main content of popover" data-placement="right">click</a>
+        <br>
+        <a href="#" data-toggle="popover" data-trigger="focus" title="popover header" data-content="Main content of popover">Click</a>
+        <a href="#" data-toggle="popover" data-trigger="hover" title="popover header" data-content="Main content of popover">Click</a>
+
+
+        <div class="toast" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto">Toast Header</strong>
+                <button class="close mb-1" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">
+                Some text of toast body
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+        $(document).ready(function () {
+            $('.toast').toast('show');
+        });
+    </script>
+
+</body>
+</html>
+
